@@ -11,31 +11,37 @@ body {
 header {
   background-image: url(wallpaperflare.com_wallpaper.jpg);
   background-size: 100%;
-  background-position: center;
+  background-position: top;
   color: whitesmoke;
-  position: fixed;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #title {
   color: whitesmoke;
-  margin: 0;
-  padding-top: 10px;
+  margin: 10px;
+  padding: 0;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  background-color: #4d4d4d;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  margin-bottom: 25px;
 }
 
 nav > a {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: #d3d3d3;
-  margin: 15px;
+  margin: 5px;
+  padding: 8px 20px 8px 20px;
   font-size: 18px;
+  background-color: #5a5a5a;
+  border-radius: 8px;
 }
 
 #current {
@@ -50,10 +56,11 @@ main {
 }
 
 article {
-  margin-bottom: 25px;
   background-color: #dedede;
   width: 50%;
   padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 10px;
 }
 
 h1,
@@ -63,10 +70,6 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#to-play {
-  margin-top: 70px;
-}
-
 #explanation {
   max-width: 35%;
   float: left;
@@ -74,6 +77,7 @@ h3 {
 
 table {
   border: 1px solid #000000;
+  border-radius: 3px;
   margin: auto;
   background-color: white;
   text-align: center;
@@ -87,6 +91,7 @@ th {
 td {
   padding: 30px;
   border: 1px solid #000000;
+  border-radius: 3px;
   background-color: #ebebeb;
   font-size: 18px;
 }
@@ -96,7 +101,8 @@ a {
   color: #000000;
 }
 
-table a:hover {
+table a:hover,
+article a:hover {
   color: red;
 }
 
@@ -113,9 +119,41 @@ table a:hover {
   padding: 2px;
 }
 
+article h2 {
+  text-align: left;
+  font-size: 20px;
+  display: inline;
+  margin-right: 20px;
+}
+
+.game-desc {
+  background: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.game-desc > a {
+  padding: 4px;
+  background-color: grey;
+  border-radius: 3px;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  float: right;
+}
+
+.game-desc > a:hover {
+  color: #b3a6ff;
+}
+
 p {
   font-family: "Times New Roman", Times, serif;
   text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 footer {
