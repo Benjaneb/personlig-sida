@@ -23,6 +23,7 @@ header {
   color: whitesmoke;
   margin: 10px;
   font-size: 20px;
+  text-shadow: 8px 8px black;
 }
 
 nav {
@@ -64,6 +65,7 @@ article {
   padding: 30px;
   margin-bottom: 25px;
   border-radius: 10px;
+  box-shadow: 2px 2px 5px #414141;
 }
 
 @media (max-width: 1200px) {
@@ -130,7 +132,7 @@ article a:hover {
 }
 
 .icon {
-  max-height: 55px;
+  height: 68px;
   padding: 2px;
 }
 
