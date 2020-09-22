@@ -79,13 +79,15 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#to-play > div {
+#flexbox {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #explanation {
   padding-right: 25px;
   flex: 1;
+  min-width: 200px;
 }
 
 table {
@@ -101,11 +103,12 @@ th {
 }
 
 td {
-  padding: 30px;
+  padding: 10px;
   border: 1px solid #000000;
   border-radius: 3px;
   background-color: #ebebeb;
   font-size: 18px;
+  height: 70px;
 }
 
 a {
