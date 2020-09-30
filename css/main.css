@@ -152,6 +152,9 @@ article h2 {
   text-align: left;
   font-size: 1.25rem;
   margin-top: 1.5rem;
+}
+
+#descriptions h2 {
   display: inline-block;
 }
 
@@ -164,14 +167,6 @@ li {
   padding: 30px;
   margin-top: 20px;
   border-radius: 5px;
-}
-
-.container:first-child {
-  margin-top: 0;
-}
-
-.container:last-child {
-  margin-bottom: 0;
 }
 
 #descriptions a {
@@ -246,6 +241,7 @@ footer {
 }
 
 #scroll-top {
+  display: none;
   background-color: grey;
   color: #ffffff;
   font-size: 50px;
@@ -272,15 +268,37 @@ span a {
   color: #602488;
 }
 
-.inline {
-  display: inline;
+#tech-tips {
+  float: right;
+  border: solid 1px #8a8a8a;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 1rem;
+  max-width: 200px;
+  background-color: #f1f1f1;
 }
 
-.img-wrapper {
-  position: relative;
+#tech-tips img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+#tech-tips p{
+  text-align: center;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 #kth {
-  max-width: 30%;
+  max-height: 150px;
   float: right;
+  margin-left: 1rem;
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
+.container:last-child {
+  margin-bottom: 0;
 }
