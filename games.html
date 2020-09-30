@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-play list</title>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+    <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -17,23 +18,25 @@
         <a href="games.html" id="current">Games</a>
         <a href="contacts.html">Contacts</a>
       </nav>
+      <button onclick="scrollToTop()" id="scroll-top" title="Scroll to the top">&#x21E7</button>
       <article id="to-play">
         <h1>To-play list</h1>
         <div class="container" id="flexbox">
           <div id="explanation">
             <h3>Explanation</h3>
             <p>
-              Earier this year I got into the Persona-series by playing the fifth
-              game of the franchise, Persona 5. After that I got completely hooked
-              so later I also want to play it's prequel, Persona 4.
+              Earier this year I got into the Persona-series by playing the
+              fifth game of the franchise, Persona 5. After that I got
+              completely hooked so later I also want to play it's prequel,
+              Persona 4.
             </p>
             <p>
-              I started playing Danganronpa roughly two years ago and since then I
-              have played Danganronpa 1: Trigger Happy Havoc & Danganronpa 2:
-              Goodbye Despair. Just like with the Persona-series now, I got hooked
-              on the franchise back then and that's why I plan to play the
-              prequels, Danganronpa AE (Another Episode): Ultra Despair Girls &
-              Danganronpa V3: Killing Harmony.
+              I started playing Danganronpa roughly two years ago and since then
+              I have played Danganronpa 1: Trigger Happy Havoc & Danganronpa 2:
+              Goodbye Despair. Just like with the Persona-series now, I got
+              hooked on the franchise back then and that's why I plan to play
+              the prequels, Danganronpa AE (Another Episode): Ultra Despair
+              Girls & Danganronpa V3: Killing Harmony.
             </p>
           </div>
           <table>
@@ -45,7 +48,11 @@
             <tbody>
               <tr>
                 <td class="icon">
-                  <img src="persona5.png" alt="Icon of Persona 5" class="icon" />
+                  <img
+                    src="/images/persona5.png"
+                    alt="Icon of Persona 5"
+                    class="icon"
+                  />
                 </td>
                 <td>
                   <a href="#Persona 5">Persona 5</a>
@@ -55,47 +62,39 @@
               <tr>
                 <td class="icon">
                   <img
-                    src="another_episode.jpg"
+                    src="/images/another_episode.jpg"
                     alt="Icon of Danganronpa Another Episode"
                     class="icon"
                   />
                 </td>
                 <td>
-                  <a href="#DR-AE" target="_blank">Danganronpa AE</a>
+                  <a href="#DR-AE">Danganronpa AE</a>
                 </td>
                 <td class="plan">Plan to play</td>
               </tr>
               <tr>
                 <td class="icon">
                   <img
-                    src="danganronpa_V3.jpg"
+                    src="/images/danganronpa_V3.jpg"
                     alt="Icon of Danganronpa V3"
                     class="icon"
                   />
                 </td>
                 <td>
-                  <a
-                    href="#DR-V3"
-                    target="_blank"
-                    >Danganronpa V3</a
-                  >
+                  <a href="#DR-V3">Danganronpa V3</a>
                 </td>
                 <td class="plan">Plan to play</td>
               </tr>
               <tr>
                 <td class="icon">
                   <img
-                    src="persona4_icon.png"
+                    src="/images/persona4_icon.png"
                     alt="Icon of Persona 4 Golden"
                     class="icon"
                   />
                 </td>
                 <td>
-                  <a
-                    href="#Persona 4"
-                    target="_blank"
-                    >Persona 4 Golden</a
-                  >
+                  <a href="#Persona 4">Persona 4 Golden</a>
                 </td>
                 <td class="plan">Plan to play</td>
               </tr>
@@ -106,7 +105,7 @@
       <article id="descriptions">
         <h1>Descriptions</h1>
         <div class="container">
-          <h2 id="Persona 5">Persona 5</h2>
+          <h2 id="Persona 5" class="linked">Persona 5</h2>
           <a
             href="https://store.playstation.com/sv-se/product/EP4062-CUSA06638_00-PERSONA512345678"
             target="_blank"
@@ -126,9 +125,10 @@
             your new friends in the fight to reform society with your own sense
             of justice!
           </p>
+          <p class="source">Source: Playstation</p>
         </div>
         <div class="container">
-          <h2 id="DR-AE">Danganronpa AE</h2>
+          <h2 id="DR-AE" class="linked">Danganronpa Another Episode</h2>
           <a
             href="https://store.steampowered.com/app/555950/Danganronpa_Another_Episode_Ultra_Despair_Girls/"
             target="_blank"
@@ -171,9 +171,10 @@
               Achievements, Steam Cloud and Steam Trading Cards
             </li>
           </ul>
+          <p class="source">Source: Steam</p>
         </div>
         <div class="container">
-          <h2 id="DR-V3">Danganronpa V3</h2>
+          <h2 id="DR-V3" class="linked">Danganronpa V3</h2>
           <a
             href="https://store.steampowered.com/app/567640/Danganronpa_V3_Killing_Harmony/"
             target="_blank"
@@ -191,28 +192,32 @@
           <h3>Key features</h3>
           <ul>
             <li>
-              <span class="bold">A New Danganronpa Begins:</span> Forget what you thought you knew about
-              Danganronpa and join a completely new cast of Ultimates for a
-              brand-new beginning.
+              <span class="bold">A New Danganronpa Begins:</span> Forget what
+              you thought you knew about Danganronpa and join a completely new
+              cast of Ultimates for a brand-new beginning.
             </li>
             <li>
-              <span class="bold">Murder Mysteries:</span> In a world where everyone is trying to survive,
-              nobody’s motivations are quite what they seem. Use your skills to
-              solve each new murder or meet a gruesome end.
+              <span class="bold">Murder Mysteries:</span> In a world where
+              everyone is trying to survive, nobody’s motivations are quite what
+              they seem. Use your skills to solve each new murder or meet a
+              gruesome end.
             </li>
             <li>
-              <span class="bold">Lie, Panic, Debate!</span> The world is shaped by our perception of it.
-              Fast-paced trial scenes will require lies, quick wits, and logic
-              to guide your classmates to the right conclusions.
+              <span class="bold">Lie, Panic, Debate!</span> The world is shaped
+              by our perception of it. Fast-paced trial scenes will require
+              lies, quick wits, and logic to guide your classmates to the right
+              conclusions.
             </li>
             <li>
-              <span class="bold">New Minigames:</span> Between the madness of murdered peers and deadly
-              trials, enjoy an abundance of brand-new minigames!
+              <span class="bold">New Minigames:</span> Between the madness of
+              murdered peers and deadly trials, enjoy an abundance of brand-new
+              minigames!
             </li>
           </ul>
+          <p class="source">Source: Steam</p>
         </div>
         <div class="container">
-          <h2 id="Persona 4">Persona 4: Golden</h2>
+          <h2 id="Persona 4" class="linked">Persona 4: Golden</h2>
           <a
             href="https://store.steampowered.com/app/1113000/Persona_4_Golden/"
             target="_blank"
@@ -238,11 +243,13 @@
             made, delivering on enthralling storytelling and quintessential
             Persona gameplay.
           </p>
+          <p class="source">Source: Steam</p>
         </div>
       </article>
     </main>
     <footer>
       <p id="copyright">Copyright: Weebklubben AB&reg;</p>
     </footer>
+    <script src="/javascript/script.js"></script>
   </body>
 </html>
