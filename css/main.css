@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  background-image: url("../images/header_background.jpg");
+  background-image: url(../images/header_background.jpg);
   background-color: #8044aa;
   background-size: 100%;
   background-position: top;
